@@ -1,0 +1,263 @@
+body {
+    background-color: #404eed;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* HEADER */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Use min-height to ensure the container
+    takes at least the full height of the viewport */
+    width: 100%;
+}
+
+.header {
+    background-color: #404eed;
+    padding: 22px 166px 0 166px; /* Adjust padding for better responsiveness */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Align items with space-between */
+    align-items: center; /* Align items vertically at the center */
+}
+
+.logo-holder {
+    /* Remove padding-top to align with other items */
+}
+
+.menu-holder {
+    margin: 16px 0 12px 0;
+}
+
+.header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header ul li {
+    margin-right: 44px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+.header ul li a:hover {
+    text-decoration: none; /* Remove the default underline */
+    position: relative;
+}
+
+.header ul li a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.log-in-holder {
+    padding: 0;
+    margin: 0;
+}
+
+.log-in-holder button {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 64px;
+    padding: 7px 16px 7px 16px;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    color: #2c2f33;
+    border: 0 solid #3498db;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.log-in-holder button:hover {
+    color: #3498db;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/*GENERAL CLASSES FOR MAIN CONTENT*/
+
+.content {
+    padding-top: 80px;
+    text-align: center; /* Center text within the content div */
+    max-width: 780px;
+    font-family: "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1{
+    font-size: 56px;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+p{
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/*IMGs*/
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2560px;
+    height: auto;
+    z-index: -1;
+    margin-left: -520px;
+}
+
+.overlay-image {
+    position: absolute;
+    /*top: 50%;*/
+    /*transform: translateY(-50%);*/
+}
+
+.left {
+    width: 689px;
+    height: 352px;
+    margin-left: -260px;
+    left: 0;
+    bottom: 0;
+}
+
+.right {
+    width: 689px;
+    height: 352px;
+    margin-right: -260px;
+    right: 0;
+    bottom: 0;
+}
+
+/*ROW 1*/
+.row1 {
+    /*height: 626px;*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Styles for buttons */
+.main-buttons-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.common-button-style {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    /*width: 316px;*/
+    padding: 16px 32px;
+    font-size: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    border: 0 solid #3498db;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button specific styles for Download for Windows */
+.btn-wind button {
+    margin: 24px 8px;
+    background-color: #ffffff;
+    color: #2c2f33;
+}
+
+/* Button specific styles for Open button */
+.btn-open button {
+    margin: 24px;
+    background-color: #23272a;
+    color: #ffffff;
+}
+
+/* Add space before text in both buttons */
+.common-button-style span {
+    margin-left: 8px;
+}
+
+/* Change the fill color of the SVG path for Download for Windows button */
+.btn-wind button:hover svg path {
+    fill: #3498db;
+}
+
+/* Hover styles for both buttons */
+.btn-open button:hover,
+.btn-wind button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-wind button:hover {
+    color: #3498db;
+}
+
+/*row 2*/
+
+.row2, .row4 {
+    padding: 120px 40px ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #23272a;
+}
+
+.text-box-2 {
+    width: 400px;
+    height: 440px;
+    font-family: "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: left;
+}
+
+.img2 {
+    width: 678px;
+    height: 440px;
+    margin-right: 80px;
+}
+
+/*row 2*/
+
+.row3 {
+    padding: 120px 40px ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    color: #23272a;
+}
