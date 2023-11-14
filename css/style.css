@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-.header {
+header {
     background-color: #404eed;
     padding: 22px 166px 0 166px; /* Adjust padding for better responsiveness */
     display: flex;
@@ -33,18 +33,18 @@ body {
     margin: 16px 0 12px 0;
 }
 
-.header ul {
+header ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-.header ul li {
+header ul li {
     margin-right: 44px;
 }
 
-.header ul li a {
+header ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -52,12 +52,12 @@ body {
     font-size: 14px;
 }
 
-.header ul li a:hover {
+header ul li a:hover {
     text-decoration: none; /* Remove the default underline */
     position: relative;
 }
 
-.header ul li a:hover::after {
+header ul li a:hover::after {
     content: "";
     display: block;
     width: 100%;
@@ -174,6 +174,7 @@ p{
     justify-content: center;
     align-items: center;
     color: white;
+    overflow: hidden;
 }
 
 /* Styles for buttons */
@@ -314,6 +315,7 @@ p{
     align-items: center;
     background-color: #f6f6f6;
     color: #23272a;
+    overflow: hidden;
 }
 
 /*row 6*/
@@ -350,7 +352,7 @@ p{
 }
 
 /*FOOTER*/
-.footer{
+footer{
     background-color: #23272a;
     color: white;
     font-family: "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -412,30 +414,30 @@ p{
     align-items: flex-start;
 }
 
-.footer ul {
+footer ul {
     list-style-type: none;
     padding: 0;
     width: 180px;
     margin: 12px 0 40px 16px;
 }
 
-.footer ul li {
+footer ul li {
     margin: 8px 0 0 0;
 }
 
-.footer ul li a {
+footer ul li a {
     text-decoration: none;
     color: white;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 16px;
 }
 
-.footer ul li a:hover {
+footer ul li a:hover {
     text-decoration: none; /* Remove the default underline */
     position: relative;
 }
 
-.footer ul li a:hover::after {
+footer ul li a:hover::after {
     content: "";
     display: block;
     width: 100%;
