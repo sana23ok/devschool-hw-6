@@ -7,7 +7,6 @@ body {
 }
 
 /* HEADER */
-
 .container {
     display: flex;
     flex-direction: column;
@@ -101,7 +100,6 @@ body {
 
 
 /*GENERAL CLASSES FOR MAIN CONTENT*/
-
 .content {
     padding-top: 80px;
     text-align: center; /* Center text within the content div */
@@ -115,7 +113,17 @@ h1{
 }
 
 h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+h3{
     font-size: 42px;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 28px;
     font-weight: 800;
 }
 
@@ -130,7 +138,7 @@ p{
     position: absolute;
     top: 0;
     left: 0;
-    width: 2560px;
+    width: auto;
     height: auto;
     z-index: -1;
     margin-left: -520px;
@@ -205,6 +213,12 @@ p{
     color: #ffffff;
 }
 
+.btn-wind-2 button {
+    margin: 18px;
+    background-color: #5865f2;
+    color: #ffffff;
+}
+
 /* Add space before text in both buttons */
 .common-button-style span {
     margin-left: 8px;
@@ -217,7 +231,8 @@ p{
 
 /* Hover styles for both buttons */
 .btn-open button:hover,
-.btn-wind button:hover {
+.btn-wind button:hover,
+.btn-wind-2 button:hover{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -225,8 +240,7 @@ p{
     color: #3498db;
 }
 
-/*row 2*/
-
+/*row 2, 4*/
 .row2, .row4 {
     padding: 120px 40px ;
     position: relative;
@@ -250,8 +264,22 @@ p{
     margin-right: 80px;
 }
 
-/*row 2*/
+.img5 {
+    width: 1180px;
+    height: auto;
+}
 
+.img6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*row 3*/
 .row3 {
     padding: 120px 40px ;
     position: relative;
@@ -260,4 +288,261 @@ p{
     align-items: center;
     background-color: #f6f6f6;
     color: #23272a;
+}
+
+/*row 5*/
+.text-box-5 {
+    width: 980px;
+    font-family: "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+.content-5 {
+    width: 1180px;
+    padding: 120px 40px 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    color: #23272a;
+}
+
+/*row 6*/
+.content-6 {
+    font-family: "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 531px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.row6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    color: #23272a;
+    position: relative;
+}
+
+.img6{
+    margin-left: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 0;
+}
+
+/*FOOTER*/
+.footer{
+    background-color: #23272a;
+    color: white;
+    font-family: "ABC Ginto Nord","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.footer-content{
+    padding: 80px 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: 40px;
+}
+
+.footer-bottom{
+    width: 1180px;
+    /*box-sizing: content-box;*/
+    padding-top: 40px;
+    margin: 0 40px 0 40px;
+    border-top: 1px solid #5865f2;
+    display: flex;
+    flex:1;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.refs{
+    padding: 24px 180px 24px 0;
+}
+
+.refs a{
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/*STYLE LIST IN FOOTER*/
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    width: 180px;
+    margin: 12px 0 40px 16px;
+}
+
+.footer ul li {
+    margin: 8px 0 0 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.footer ul li a:hover {
+    text-decoration: none; /* Remove the default underline */
+    position: relative;
+}
+
+.footer ul li a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.headlines{
+    color:#5865f2;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-family: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*-------------------------*/
+
+/* Style for the dropdown button and content */
+.dropbtn {
+    background-color: #23272a;
+    color: white;
+    padding: 24px 0 24px 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    bottom: 100%;
+    max-height: 272px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*.dropdown:hover .dropbtn {*/
+/*    background-color: #3e8e41;*/
+/*}*/
+
+.dropdown-content::-webkit-scrollbar {
+    width: 4px;
+    height: 32px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #cccccc; /* Set the color of the scrollbar thumb */
+    border-radius: 6px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+.lang{
+    width:20px;
+    height:auto;
+}
+
+.sign-up-holder button {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 72px;
+    padding: 7px 12px 7px 12px;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #5865f2;
+    color: #ffffff;
+    border: 0 solid #ffffff;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-up-holder button:hover {
+    background-color: #7983f5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
